@@ -4,6 +4,7 @@
              x:Class="TriviaXamarinApp.Views.DeleteQuestion">
     <ContentPage.Content>
         <StackLayout>
+            <ScrollView>
             <CollectionView x:Name="collectionName" 
                             ItemsSource="{Binding UserQuestions}">
                 <CollectionView.ItemTemplate>
@@ -34,6 +35,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
